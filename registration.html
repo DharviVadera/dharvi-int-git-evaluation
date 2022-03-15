@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        
+    <!------------------------ CSS // Styling ------------------------->
+    <style>
+        form{
+            margin-top: 3vw;
+            background-color: rgb(168, 241, 243);
+            width: 35%;
+            border-radius: .5vw;
+            box-shadow:
+                0 2.8px 2.2px rgb(48, 58, 43),
+                0 6.7px 5.3px rgb(58, 53, 43),
+                0 12.5px 10px rgb(58, 53, 43),
+                0 22.3px 17.9px rgb(58, 53, 43),
+                0 41.8px 33.4px rgb(58, 53, 43),
+                0 100px 80px rgb(58, 53, 43);
+            margin-left: 30vw;
+            margin-top: 2vw;
+            padding: 4vw;
+        }
+
+        input {
+            background: rgba(248, 248, 248, 0.753);
+        }
+    </style>
+    
+        <form>
+
+            <h1
+            style="text-align: center; margin-bottom: 4vw; border-style:dashed; border-color: rgba(0, 0, 0, 0.658); color: indianred; text-shadow: 1px 1px white;">
+            Registration Form</h1>
+
+
+            <!------------------------------------ First Name ------------------------------>
+
+            <label for="First_name" style="font-weight: bolder;font-size: 25px; color: darkorchid; text-shadow: 1px 1px gray;">First
+                Name:</label><br>
+            <input type="text" id="First_name" placeholder="Enter your first name" name="First_name"
+                style="border-radius: 3px;border-color: rgb(228, 225, 225);width:300px;height:30px" onkeyup="return firstName()"><br>
+           
+
+
+            <!------------------------------------- Last Name ----------------------------->
+
+            <label for="Last_name" style="font-weight: bolder;font-size: 25px; color: darkorchid; text-shadow: 1px 1px gray;">Last
+                Name:</label><br>
+            <input type="text" id="Last_name" placeholder="Enter your last name" name="Last_name"
+                style="border-radius: 3px;border-color: rgb(228, 225, 225);width:300px;height: 30px;" onkeyup="return lastName()"><br>
+           
+
+
+            <!-------------------------------------- Email --------------------------------->
+
+            <label for="E_mail" style="font-weight: bolder;font-size: 25px; color: darkorchid; text-shadow: 1px 1px gray;">Email:</label><br>
+            <input type="email" id="E_mail" name="E_mail" placeholder="Enter your email"
+                style="border-radius: 3px;border-color: rgb(228, 225, 225);width:300px;height: 30px;" onkeyup="return emailId()"><br>
+           
+             <!------------------------------------------- Password -------------------------------------->
+
+             <label for="pwd"
+             style="font-weight: bolder;font-size: 25px; color: darkorchid;
+              text-shadow: 1px 1px gray;"><b>Password:</b></label><br>
+             <input type="password" id="pwd" placeholder="Enter password" name="pwd"
+             style="border-radius: 3px;border-color: rgb(228, 225, 225);width:300px;height: 30px;" onkeyup="return passWord()"><br>
+         
+
+
+         <!------------------------------------------- Confirm Password ------------------------------>
+
+         <label for="C_pwd" style="font-weight: bolder;font-size: 25px; color: darkorchid;
+         text-shadow: 1px 1px gray;"><b>Confirm
+                 Password:</b></label><br>
+         <input type="password" id="C_pwd" placeholder="Re-enter password" name="C_pwd"
+             style="border-radius: 3px;border-color: rgb(228, 225, 225);width:300px;height: 30px;" onkeyup="return confirmPassword()"><br>
+        
+         <!-------------------------------------------- Button // Register ------------------------------>
+
+         <button type="submit" id="sbtn" name="submit" 
+         style="background-color:rgb(235, 125, 106); color: white; margin-left: 5px; margin-top: 20px; width:15vw; height: 60px; font-size: 20px; color:white;">Register</button>
+
+
+        </form>
+    </body>
+</html>
